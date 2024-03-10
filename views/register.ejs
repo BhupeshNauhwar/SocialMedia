@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+        <h1>Create Account</h1>
+        <div class="alert alert-secondary" role="alert">
+            <%=message%>
+        </div>
+
+        <form action="/register" method="post">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required placeholder="First Name"> <br> <br>
+            <label for="lastname">First Name</label>
+            <input type="text" id="lastname" name="lastname" required placeholder="Last Name"> <br> <br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email"> <br> <br>
+            
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" name="number" required placeholder="Phone Number"> <br> <br>
+            
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <input type="radio" id="gender" name="gender" value="other">Other <br><br>
+    
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required placeholder="Date of Birth"> <br> <br>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder=" Password"> <br> <br>
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword" required placeholder="Confirm Password"> <br> <br>
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
